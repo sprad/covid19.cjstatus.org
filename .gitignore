@@ -3,5 +3,7 @@
 *.swo
 *.swp
 
+output.css
+
 /build
 /node_modules
