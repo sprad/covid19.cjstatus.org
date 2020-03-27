@@ -4,3 +4,8 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+/*
+  Put custom CSS below this comment.  You'll need to run "yarn build-local" to see changes.
+  Note: Ideally, you shouldn't have to add too much custom CSS.
+*/
