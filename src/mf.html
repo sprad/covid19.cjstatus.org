@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+    <title>Dashboard</title>
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          color: #00413E;
+        }
+
+        h1 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 32px;
+          letter-spacing: -0.03em;
+          color: #006C67;
+        }
+
+        h2 {
+          font-family: 'Rubik', sans-serif;
+          font-weight: 100;
+          font-size: 24px;
+          line-height: 1.7em;
+          letter-spacing: -0.03em;
+          color: #006C67;
+        }
+
+        h3 {
+          font-family: 'Rubik', sans-serif;
+          font-weight: 100;
+          font-size: 18px;
+          line-height: 1.7em;
+          letter-spacing: -0.03em;
+          color: #006C67;
+        }        
+
+        p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: -0.05em;
+          color: #00413E;
+        }
+
+
+        span,
+        p,
+        ol {
+          letter-spacing: 0;
+          font-family: "Rubik", sans-serif;
+          line-height: 1.5;
+          font-weight: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+
+    <!-- Custom Markup -->
+    <div class="h-screen flex px-24 py-16">
+      <!-- Side bar -->
+      <div class="flex flex-col w-1/4 mr-24">
+        <div class="flex-1 flex flex-col pt-5 pb-4">
+          <div>
+            <h1>Model 01</h1>
+          </div>
+          <div class="mt-5 mb-5 border-b border-gray-300"></div>
+          <div id="notes" class="mb-12">
+            <p>
+              This text describes unique qualities for this data model.  Taking notes here will be useful when you have multiple data model experiments in your library?
+            </p>
+          </div>
+          <div id="last_update">
+            <p class="text-xs text-gray-500">Last Update: March 25, 2020</p>
+          </div>
+          <div class="mt-5 mb-5 border-b border-gray-300"></div>
+          <div id="toggles">
+            <div class="flex justify-between items-baseline">
+              <h3>Daily Reports</h3>
+              <div>
+                <label for="daily_reports" class="mr-3">Off</label><input type="checkbox" id="daily_reports" />
+              </div>
+            </div>
+            <div class="mt-5 mb-5 border-b border-gray-300"></div>
+            <div class="flex justify-between items-baseline">
+              <h3>Data Sharing</h3>
+              <div>
+                <label for="data_sharing" class="mr-3">Off</label><input type="checkbox" id="data_sharing" checked />
+              </div>
+            </div>
+            <div class="mt-5 mb-5 border-b border-gray-300"></div>
+            <div id="toggle_tool_tip" class="bg-gray-200 p-6">
+              <p class="mb-6">
+                Turn on 'Daily Reports' to receive lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <span class="font-bold">Dismiss</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col flex-1 pb-6 py-5">
+        <div class="flex-1 pl-8">
+          <div>
+            <h1>Add Facilities</h1>
+          </div>
+          <div id="facilities_header" class="border-t border-b border-gray-300 mt-5 mb-5 py-2 flex flex-row">
+            <div class="w-2/5 flex flex-row">
+              <div class="w-1/4">Cases</div>
+              <div class="w-3/4">Facility</div>
+            </div>
+            <div class="w-3/5 flex flex-row justify-between">
+              <div>Projection</div>
+              <div>
+                <div class="ml-6 inline">Fatalities</div>
+                <div class="ml-6 inline">Exposed</div>
+                <div class="ml-6 inline">Infectious</div>
+                <div class="ml-6 inline">Hospitalized</div>
+              </div>
+            </div>
+          </div>
+          <div id="facilities">
+            <div id="facility_row" class="flex flex-row h-48 mb-8 border-b border-grey-300">
+              <div id="facility_info" class="w-2/5 flex flex-col justify-between">
+                <div class="flex flex-row">
+                  <div class="w-1/4 text-red-600 text-lg font-bold">
+                    100
+                  </div>
+                  <div class="w-3/4 text-lg font-bold">
+                    Name of the Facility
+                  </div>
+                </div>
+                <div class="text-xs text-gray-500 pb-4 flex flex-row justify-between">
+                  <div>
+                    Last update: on March 25, 2020
+                  </div>
+                  <div class="mr-16 font-bold">
+                    &#183;&nbsp;&nbsp;&nbsp;&#183;&nbsp;&nbsp;&nbsp;&#183;
+                  </div>
+                </div>
+              </div>
+              <div class="w-3/5">
+                Projection Chart Goes Here
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Custom Markup -->
+  </body>
+</html>
